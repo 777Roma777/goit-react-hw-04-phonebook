@@ -1,10 +1,10 @@
 import React from 'react';
 import css from './contactList.module.css';
 
-export default function ContactsList({ contacts, handleDeleteContact }) {
+const ContactsList = ({ contacts, handleDeleteContact }) => {
   return (
     <ul className={css.contactsList}>
-      {contacts.map((contact) => (
+      {contacts.map(contact => (
         <li className={css.contactsItem} key={contact.id}>
           <span className={css.textContact}>
             {contact.name}: {contact.number}
@@ -19,6 +19,6 @@ export default function ContactsList({ contacts, handleDeleteContact }) {
       ))}
     </ul>
   );
-}
+};
 
-
+export default ContactsList;

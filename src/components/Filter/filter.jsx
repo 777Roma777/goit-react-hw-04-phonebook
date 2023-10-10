@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './filter.module.css';
 
-export default function Filter({ filter, handleFilterChange }) {
+ const Filter = ({ filter, handleFilterChange }) => {
   return (
     <label>
       <p className={css.textFilter}>Find contacts by name</p>
@@ -15,4 +15,6 @@ export default function Filter({ filter, handleFilterChange }) {
       />
     </label>
   );
-}
+};
+
+export default Filter;
